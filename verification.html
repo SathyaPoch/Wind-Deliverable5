@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wind - Reset Password</title>
+    
+    <link rel="stylesheet" href="./css/verification.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script src="./js/verification.js" defer></script>
+    <div class="phone-container">
+        
+
+        <div class="content">
+            <h1 class="verification-title">Check your email to reset your password</h1>
+            <p class="instruction">Enter the verification code we sent to your email.</p>
+
+            <div class="success-message" id="successMessage">
+                Verification code submitted successfully!
+            </div>
+
+            <div class="error-message" id="errorMessage">
+                Please enter a verification code.
+            </div>
+
+            <form id="verificationForm">
+                <div class="form-group">
+                    <label class="form-label form-label-bold">Verification code</label>
+                    <input type="text" class="form-input verification-input" id="verificationInput" placeholder="Enter code" required>
+                </div>
+
+                <button type="submit" class="submit-button">Submit</button>
+
+                <p class="help-text">Check your spam email or junk for the verification code</p>
+            </form>
+                
+            <div class="back-link">
+                <a href="Film.html">Back to login</a>
+            </div>
+        </div>
+
+       
+    </div>
+
+</body>
+</html>

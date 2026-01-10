@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Clean</title>
+    <link rel="stylesheet" href="./css/account.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="app-container">
+            <!-- Navigation Tabs -->
+            <nav class="nav-tabs">
+                <a href="#" class="nav-tab">Film</a>
+                <a href="#" class="nav-tab">Article</a>
+                <a href="#" class="nav-tab">Rising creators</a>
+                <a href="#" class="nav-tab">Review</a>
+                <a href="#" class="nav-tab">Offline</a>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="content">
+                <!-- Settings Icon -->
+                <button class="settings-btn">
+                    <svg class="settings-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                    </svg>
+                </button>
+
+                <!-- Profile Avatar -->
+                <div class="profile-section">
+                    <div class="avatar">
+                        <svg class="avatar-icon" width="50" height="50" viewBox="0 0 24 24" fill="currentColor">
+                            <circle cx="12" cy="8" r="4"></circle>
+                            <path d="M4 20c0-3.314 3.582-6 8-6s8 2.686 8 6"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="stats-section">
+                    <div class="stat-item">
+                        <span class="stat-label">Review and Rate</span>
+                        <div class="stat-right">
+                            <span class="stat-value">0</span>
+                            <svg class="chevron-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="stat-item">
+                        <span class="stat-label">Films</span>
+                        <span class="stat-value">10</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <span class="stat-label">Articles</span>
+                        <span class="stat-value">29</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <span class="stat-label">Following</span>
+                        <span class="stat-value">119</span>
+                    </div>
+
+                    <div class="stat-item">
+                        <span class="stat-label">Followers</span>
+                        <span class="stat-value">30</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Navigation -->
+            <nav class="bottom-nav">
+                <button class="nav-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </button>
+                <button class="nav-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="nav-icon active">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+            </nav>
+
+            <!-- Home Indicator -->
+            <div class="home-indicator"></div>
+        </div>
+    </div>
+
+    <script src="./js/account.js"></script>
+</body>
+</html>
