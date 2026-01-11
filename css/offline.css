@@ -15,15 +15,16 @@ body {
 }
 
 .phone-container {
-    width: 375px;
-    height: 812px;
-    background-color: #000;
+    width: 100%;
+    max-width: 430px;
+    height: 900px;
+    background-color: #f5f5f5;
     border-radius: 40px;
-    padding: 12px;
+    padding: 0;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     position: relative;
+    overflow: hidden;
 }
-
 .screen {
     width: 100%;
     height: 100%;
@@ -39,8 +40,8 @@ body {
 /* Navigation Tabs */
 .nav-tabs {
     display: flex;
-    gap: 20px;
-    padding: 20px 30px;
+    gap: 25px;
+    padding: 20px 20px;
     background-color: #f5f5f5;
     border-bottom: 1px solid #e0e0e0;
     overflow-x: hidden;
@@ -55,15 +56,17 @@ body {
 .nav-tab {
     text-decoration: none;
     color: #666;
-    font-size: 16px;
+    font-size: 17px;
     white-space: nowrap;
     padding-bottom: 5px;
     transition: color 0.3s;
+    font-weight: 400;
 }
 
 .nav-tab.active {
     color: #00a8ff;
     border-bottom: 2px solid #00a8ff;
+    font-weight: 500;
 }
 
 .nav-tab:hover {
@@ -113,49 +116,51 @@ body {
 }
 
 /* Bottom Navigation */
+/* Bottom Navigation */
 .bottom-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 16px 24px;
-    background-color: #fff;
+    padding: 8px 40px 20px 40px;
+    background-color: #ffffff;
     border-top: 1px solid #e0e0e0;
 }
 
-.nav-icon {
-    color: #666;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: color 0.3s ease;
+.nav-icon i {
+    font-size: 24px;
+}
+
+.nav-icon span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.nav-icon.active {
+    color: #00a8ff;
+}
+
+.nav-icon.active span {
+    font-weight: 500;
 }
 
 .nav-icon:hover {
-    color: #4a9eff;
+    color: #00a8ff;
 }
 
-.nav-icon:first-child {
-    color: #4a9eff;
-}
-
-.nav-icon svg {
-    width: 28px;
-    height: 28px;
-}
-
-/* Home Indicator */
 .home-indicator {
     position: absolute;
     bottom: 8px;
     left: 50%;
     transform: translateX(-50%);
-    width: 134px;
+    width: 140px;
     height: 5px;
     background-color: #000;
-    border-radius: 100px;
+    border-radius: 3px;
 }
-
 /* Responsive */
 @media (max-width: 420px) {
     .phone-container {
