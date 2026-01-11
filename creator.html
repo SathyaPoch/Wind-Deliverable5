@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rising Creators</title>
+    <script src="./js/navigation.js" defer></script>
+    <script src="./js/creator.js">defer</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -14,9 +16,9 @@
         <div class="app-container">
             <!-- Navigation Tabs -->
             <nav class="nav-tabs">
-                <a href="Film.html" class="nav-tab">Film</a>
+                <a href="index.html" class="nav-tab">Film</a>
                 <a href="article.html" class="nav-tab">Article</a>
-                <a href="creator.html" class="nav-tab active">Rising creators</a>
+                <a href="creator.html" class="nav-tab">Rising creators</a>
                 <a href="review.html" class="nav-tab">Review</a>
                 <a href="offline.html" class="nav-tab">Offline</a>
             </nav>
@@ -97,21 +99,23 @@
                 </div>
             </div>
 
-            <!-- Bottom Navigation -->
-            <nav class="bottom-nav">
-            <div class="nav-icon home-icon active">
+           <!-- Bottom Navigation -->
+             <nav class="bottom-nav">
+            <a href="index.html" class="nav-icon home-icon active">
               <i class="fa-solid fa-house"></i>
-            </div>
-            <div class="nav-icon search-icon">
+            </a>
+            <a href="search.html" class="nav-icon">
               <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="nav-icon profile-icon">
+            </a>
+            <a href="account.html" class="nav-icon">
               <i class="fa-solid fa-user"></i>
-            </div>
+            </a>
         </nav>
+
+            <!-- Home Indicator -->
+            <div class="home-indicator"></div>
         </div>
     </div>
-
-    <script src="./js/creator.js"></script>
+ 
 </body>
 </html>

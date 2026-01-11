@@ -129,6 +129,18 @@ body {
     background-color: #ffffff;
     border-top: 1px solid #e0e0e0;
 }
+.nav-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: color 0.3s;
+}
 
 .nav-icon i {
     font-size: 24px;
@@ -168,3 +180,5 @@ body {
         max-width: 375px;
         height: 100vh;
         max-height: 812px;
+    }
+}

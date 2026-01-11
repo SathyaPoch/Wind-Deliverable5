@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Feed</title>
+    <script src="./js/review.js">defer</script>
+    <script src="./js/navigation.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -13,10 +15,10 @@
         <div class="app-container">
             <!-- Navigation Tabs -->
             <nav class="nav-tabs">
-                <a href="Film.html" class="nav-tab">Film</a>
+                <a href="index.html" class="nav-tab">Film</a>
                 <a href="article.html" class="nav-tab">Article</a>
                 <a href="creator.html" class="nav-tab">Rising creators</a>
-                <a href="review.html" class="nav-tab active">Review</a>
+                <a href="review.html" class="nav-tab">Review</a>
                 <a href="offline.html" class="nav-tab">Offline</a>
             </nav>
 
@@ -27,8 +29,8 @@
                     <div class="post-header">
                         <h2 class="post-title">Become the person that you would like to be....</h2>
                         <div class="post-meta">
-                            <span class="author">jay</span>
-                            <span class="heart-icon">🖤</span>
+                            <span class="author">jay<i class="fa-sharp fa-solid fa-heart"></i></span>
+                            <span class="heart-icon"></span>
                             <span class="post-date">December 18</span>
                         </div>
                     </div>
@@ -44,9 +46,9 @@
                                 This article is very beneficial for young adult , everyone in their 20s should read this.
                             </div>
                             <div class="comment-actions">
-                                <button class="action-btn"><i class="fa-utility-fill fa-semibold fa-heart">like</i></button>
-                                <button class="action-btn"><i class="fa-thin fa-reply">reply</i></button>
-                                <button class="action-btn"><i class="fa-sharp fa-solid fa-share-nodes">share</i></button>
+                                <button class="action-btn"><i class="fa-utility-fill fa-semibold fa-heart"></i></button>like
+                                <button class="action-btn"><i class="fa-thin fa-reply"></i></button>reply
+                                <button class="action-btn"><i class="fa-sharp fa-solid fa-share-nodes"></i></button>share
                             </div>
                         </div>
                     </div>
@@ -78,9 +80,9 @@
                             </div>
 
                             <div class="comment-actions">
-                                <button class="action-btn"><i class="fa-utility-fill fa-semibold fa-heart">like</i></button>
-                                <button class="action-btn"><i class="fa-thin fa-reply">reply</i></button>
-                                <button class="action-btn"><i class="fa-sharp fa-solid fa-share-nodes">share</i></button>
+                                <button class="action-btn"><i class="fa-utility-fill fa-semibold fa-heart"></i></button>like
+                                <button class="action-btn"><i class="fa-thin fa-reply"></i></button>reply
+                                <button class="action-btn"><i class="fa-sharp fa-solid fa-share-nodes"></i></button>share
                             </div>
                         </div>
                     </div>
@@ -88,19 +90,19 @@
             </div>
 
         <nav class="bottom-nav">
-            <div class="nav-icon home-icon active">
+            <a href = "index.html"  class="nav-icon home-icon active">
               <i class="fa-solid fa-house"></i>
-            </div>
-            <div class="nav-icon search-icon">
+            </a>
+            <a href = "search.html" class="nav-icon search-icon">
               <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="nav-icon profile-icon">
+            </a>
+            <a href = "account.html" class="nav-icon profile-icon">
               <i class="fa-solid fa-user"></i>
-            </div>
+            </a>
         </nav>
         </div>
     </div>
 
-    <script src="./js/review.js"></script>
+    
 </body>
 </html>

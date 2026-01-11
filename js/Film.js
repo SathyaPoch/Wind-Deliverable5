@@ -52,59 +52,57 @@ const films = [
     },
     {
         id: 7,
-        title: "Blade Runner 2049",
-        genre: "Sci-fi/Thriller",
-        year: "2017",
-        duration: "2h 44mn",
-        poster: "./image/F1.png"
+        title: "Dead Poets Scociety",
+        genre: "Comedy/Drama",
+        year: "1989",
+        duration: "2h 8mn",
+        poster: "./image/poet.jpg"
     },
     {
         id: 8,
-        title: "The Grand Budapest Hotel",
-        genre: "Comedy/Drama",
-        year: "2014",
-        duration: "1h 39mn",
-        poster: "./image/lost.png"
+        title: "The Conjuring : Last Rites",
+        genre: "Horror",
+        year: "2025",
+        duration: "2h 15mn",
+        poster: "./image/conjuring.webp"
     },
     {
         id: 9,
-        title: "Interstellar",
-        genre: "Sci-fi/Adventure",
-        year: "2014",
-        duration: "2h 49mn",
-        poster: "./image/theworld.png"
+        title: "Highest 2 Lowest",
+        genre: "Crime/Thriller",
+        year: "2025",
+        duration: "2h 13mn",
+        poster: "./image/high.webp"
     },
     {
         id: 10,
-        title: "Moonlight",
-        genre: "Drama",
-        year: "2016",
-        duration: "1h 51mn",
-        poster: "./image/her.png"
+        title: "Mission: Impossible - The Final Reckoning",
+        genre: "Action/Thriller",
+        year: "2025",
+        duration: "2h 50mn",
+        poster: "./image/mission.webp"
     },
     {
         id: 11,
-        title: "Parasite",
-        genre: "Thriller/Drama",
-        year: "2019",
-        duration: "2h 12mn",
-        poster: "./image/sunshine.png"
+        title: "Superman",
+        genre: "Action/Sci-fi",
+        year: "2025",
+        duration: "2h 9mn",
+        poster: "./image/superman.webp"
     },
     {
         id: 12,
-        title: "The Shape of Water",
-        genre: "Fantasy/Romance",
-        year: "2017",
-        duration: "2h 3mn",
-        poster: "./image/detachment.png"
+        title: "Final Destination Bloodlines",
+        genre: "Horror/Mystery",
+        year: "2025",
+        duration: "1h 50mn",
+        poster: "./image/final.webp"
     }
 ];
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', function() {
     loadFilms();
-    setupNavigation();
-    setupBottomNav();
 });
 
 // Load films into the grid
@@ -136,7 +134,7 @@ function createFilmCard(film) {
     card.dataset.filmId = film.id;
     
     card.innerHTML = `
-        <img src="${film.poster}" alt="${film.title}" class="film-poster" onerror="this.src='https://via.placeholder.com/400x600?text=${encodeURIComponent(film.title)}'">
+        <img src="${film.poster}" alt="${film.title}" class="film-poster" onerror="this.src='https://via.placeholder.com/400x600/667eea/ffffff?text=${encodeURIComponent(film.title)}'">
         <div class="film-info">
             <h3 class="film-title">${film.title}</h3>
             <p class="film-genre">${film.genre}</p>
@@ -158,57 +156,8 @@ function createFilmCard(film) {
 // Handle film card click
 function handleFilmClick(film) {
     console.log('Film clicked:', film);
-    alert(`You clicked on "${film.title}"\n\nIn a real app, this would open the film details page.`);
-}
-
-// Setup top navigation
-function setupNavigation() {
-    const navItems = document.querySelectorAll('.top-navigation .nav-item');
-    
-    navItems.forEach(item => {
-        item.addEventListener('click', function() {
-            // Remove active class from all items
-            navItems.forEach(nav => nav.classList.remove('active'));
-            
-            // Add active class to clicked item
-            this.classList.add('active');
-            
-            console.log('Navigation clicked:', this.textContent);
-            
-            // In a real app, you would load different content based on the navigation
-            if (this.textContent.trim() !== 'Film') {
-                alert(`${this.textContent} section coming soon!`);
-            }
-        });
-    });
-}
-
-// Setup bottom navigation
-function setupBottomNav() {
-    const navIcons = document.querySelectorAll('.bottom-nav .nav-icon');
-    
-    navIcons.forEach(icon => {
-        icon.addEventListener('click', function() {
-            // Remove active class from all icons
-            navIcons.forEach(nav => nav.classList.remove('active'));
-            
-            // Add active class to clicked icon
-            this.classList.add('active');
-            
-            // Handle navigation
-            if (this.classList.contains('home-icon')) {
-                console.log('Home clicked');
-                // Already on home
-            } else if (this.classList.contains('search-icon')) {
-                console.log('Search clicked');
-                alert('Search functionality coming soon!');
-            } else if (this.classList.contains('profile-icon')) {
-                console.log('Profile clicked');
-                // Navigate to login page
-                window.location.href = 'login.html';
-            }
-        });
-    });
+    // You can navigate to a film details page here
+    // window.location.href = `film-details.html?id=${film.id}`;
 }
 
 // Filter films by genre (optional feature)
